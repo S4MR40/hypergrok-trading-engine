@@ -1,0 +1,20 @@
+{
+  "name": "hypergrok-trading-engine",
+  "version": "1.0.0",
+  "private": false,
+  "description": "Seven-agent crypto paper-trading engine. LIVE execution is hard-disabled.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "tsx --test src/lib/engine/risk.test.ts src/lib/execution/gate.test.ts src/lib/execution/paper.test.ts",
+    "test:engine": "npm test"
+  },
+  "devDependencies": {
+    "@types/node": "^22.16.5",
+    "tsx": "^4.20.0",
+    "typescript": "^5.7.0"
+  }
+}
